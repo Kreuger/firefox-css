@@ -1,4 +1,4 @@
-Setting it up:
+## How to setup Firefox for custom CSS.
 1. Open the browser and go to about:config
 2. Search for toolkit.legacyUserProfileCustomizations.stylesheets and change the value to true. 
 3. Open about:support
