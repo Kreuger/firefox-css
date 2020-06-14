@@ -1,0 +1,298 @@
+/* Color Pallet */
+.identity-color-blue {--identity-tab-color: #2574A7 !important; --identity-icon-color: #2980b9 !important;}
+.identity-color-green {--identity-tab-color: #1E934F !important; --identity-icon-color: #16a085 !important;}
+.identity-color-orange {--identity-tab-color: #e67e22 !important; --identity-icon-color: #e67e22 !important;}
+.identity-color-red {--identity-tab-color: #c0392b !important; --identity-icon-color: #e74c3c !important;}
+.identity-color-purple {--identity-tab-color: #813E9D !important; --identity-icon-color: #8e44ad !important;}
+
+
+
+/****** Nav Bar *****/
+/* Nav Bar Background Color */
+#nav-bar {background-color: #2A2D3E !important;}
+
+/* URL Bar */
+#urlbar-background {background-color: #191925 !important; border: none !important;}
+#urlbar-input-container {color: #00AABB !important;}
+
+/* Content Seperator Color */
+:root:-moz-lwtheme {--chrome-content-separator-color: #1F1F2B !important;}
+
+/* Megabar Suggestions Divider */
+.urlbarView.megabar .urlbarView-body-inner {border-top: none !important;}
+
+.urlbarView:not(.megabar) .urlbarView-row:not([type="tip"])[selected], .urlbarView.megabar .urlbarView-row:not([type="tip"])[selected] > .urlbarView-row-inner {background-color: #2A2D3E !important; color: #999 !important;}
+
+.urlbarView:not(.megabar) .urlbarView-row:not([type="tip"]):hover, .urlbarView.megabar .urlbarView-row:not([type="tip"]):hover > .urlbarView-row-inner {background-color: #2A2D3E !important; color: #999 !important;}
+
+.urlbarView-url {
+color: #00AABB !important;}
+
+.urlbarView:not(.megabar) .urlbarView-row:not([type="tip"])[selected], .urlbarView.megabar .urlbarView-row:not([type="tip"])[selected] > .urlbarView-row-inner > .urlbarView-url {color: #00AABB !important;}
+
+/* Hide Divider between Bookmark & Container Logo */
+#pageActionSeparator {display: none !important;}
+/*.megabar[open="true"] {}*/
+
+/* Titlebar Close Mini Padding */
+.titlebar-buttonbox {margin-right: 5px !important;}
+
+/***** Tabs *****/
+/* Pre Style */
+.tab-stack > .tab-background {background-image: none !important;}
+
+/* Tab Text Color */
+.tab-content {color: #ccc !important;} /* [selected="true"] */
+
+/* Hide Top & Bottom Line */
+.tab-bottom-line,.tab-line {display: none !important;}
+#navigator-toolbox {--tabs-border-color: transparent !important;}
+
+/* Hide Tab Sepertor */
+#toolbar-menubar[autohide="true"] + #TabsToolbar .tabbrowser-tab::after {display: none !important;}
+
+
+/***** Tabs Background Color *****/
+/* Active Tab Background Color */
+.tabbrowser-tab > .tab-stack > .tab-background[selected="true"] {background-color: transparent !important; border-top: none !important;}
+
+/* Inactive Tabs Background Color */
+.tabbrowser-tab > .tab-stack > .tab-background {background-color: #2A2D3E !important;}
+
+/* Inactive Container Tabs Background Color */
+.identity-color-orange > .tab-stack > .tab-background {background-color: var(--identity-tab-color) !important;}
+.identity-color-blue > .tab-stack > .tab-background {background-color: var(--identity-tab-color) !important;}
+.identity-color-red > .tab-stack > .tab-background {background-color: var(--identity-tab-color) !important;}
+.identity-color-green > .tab-stack > .tab-background {background-color: var(--identity-tab-color) !important;}
+.identity-color-purple > .tab-stack > .tab-background {background-color: var(--identity-tab-color) !important;}
+
+/* Container Tabs Text Color Selected */
+.identity-color-blue > .tab-stack > .tab-content[selected="true"] {color: var(--identity-tab-color) !important;}
+.identity-color-purple > .tab-stack > .tab-content[selected="true"] {color: var(--identity-tab-color) !important;}
+.identity-color-green > .tab-stack > .tab-content[selected="true"] {color: var(--identity-tab-color) !important;}
+.identity-color-red > .tab-stack > .tab-content[selected="true"] {color: var(--identity-tab-color) !important;}
+
+/* Tabs Spaceing from Nav Bar */
+.tabbrowser-tab {margin-bottom: 3px !important; margin-left: 3px !important; margin-top: 3px !important;}
+
+/* Tabs Padding */
+.tab-content {padding-top: 2px !important; padding-bottom: 2px !important;}
+
+/* Tabs Border Radius */
+.tab-background {border-radius: 5px !important;}
+
+/* Tabs Hover Background / Text Color */
+.tabbrowser-tab:hover .tab-background {opacity: 0.9 !important;}
+
+/* Hide Tabs Divider */
+
+/* Site Favicon Grayscale */
+
+.tab-icon-image {filter: grayscale(1) brightness(0.5) contrast(1.5) !important;}
+
+
+/***** Menu Popups *****/
+/* Popup Background & Text Color / Round Borders */
+.PanelUI-subView {
+  --arrowpanel-background: #2A2D3E !important;
+  --arrowpanel-color: #00AABB !important;
+  --lwt-accent-color: rgb(12, 12, 13);
+  --lwt-text-color: #00AABB !important;
+  color: #00AABB !important;
+  border-radius: 7px !important;}
+
+/* Extra Popup Fix */
+.panel-arrowcontent {
+  border-radius: 7px !important;
+  margin: 0px !important;
+  background-color: #2A2D3E !important;}
+
+/* Book */
+.panel-arrowcontainer {margin-top: 7px !important;}
+
+/* Popup - Menu Item Background Hover */
+.subviewbutton:hover, .subviewbutton:active, .subviewbutton:focus {background-color: #1F1F2B !important;}
+
+/* Hide Popup Arrows */
+.panel-arrowbox {display: none !important; fill:#2A2D3E !important}
+
+/* Hide Non-Required Menu Items */
+#appMenu-fxa-status, .sync-ui-item, #appMenu-new-window-button {display: none !important;}
+
+/* Menu Seperators */
+.panel-subview-body toolbarseparator {border-top: 1px solid #232533 !important;}
+.panel-subview-body toolbarseparator[orient="vertical"] {border-inline-start: 1px solid #232533 !important;}
+
+/* Disabled Restore Menu Button */
+#appMenuRestoreLastSession[disabled="true"] .toolbarbutton-icon {fill: #999 !important;}
+#appMenuRestoreLastSession[disabled="true"] .toolbarbutton-text {color: #999 !important;}
+
+/* Zoom Reset Button */
+#appMenu-zoomReset-button {background-color: #1F1F2B !important;}
+#appMenu-zoomReset-button:hover, #appMenu-zoomReset-button:active {background-color: #191925 !important;}
+
+/* #appMenu-edit-controls, .panel-subview-body > toolbarseparator:nth-child(6) */
+
+/* Download */
+#downloadsPanel-mainView {background-color: #2A2D3E !important;}
+.downloadTarget {color: #00AABB !important;}
+.downloadDetails {color: #999 !important;}
+#downloadsHistory {background-color: #191925 !important; color: #999 !important;}
+#downloadsHistory:hover {background-color: #14141D !important;}
+.downloadProgress dev {background-color: #00AABB !important;}
+.downloadButton:hover {background-color: #191925 !important}
+.downloadButton .button-icon {fill: #00AABB !important}
+.download-state {border-bottom: 1px solid #191925 !important;}
+.download-state:last-child {border-bottom: none !important;}
+.download-state > toolbarseparator {background-color: #191925 !important;}
+
+
+
+/* Bookmark Popup */
+/* Title / Header */
+#editBookmarkPanelTitle {color: #00AABB !important;}
+.panel-header {border-bottom: none !important;}
+
+/* Text Color */
+#editBookmarkPanel_showForNewBookmarks {color: #999 !important;}
+
+/* Labels */
+#editBookmarkPanelRows label {color: #999 !important;}
+
+/* Input Field */
+#editBookmarkPanelRows input {-moz-appearance: none !important; padding: 5px 10px !important; border-radius: 7px !important; background-color: #191925 !important; color: #999 !important}
+
+/* Multiselect List / Button */
+#editBookmarkPanelRows menulist, #editBookmarkPanelRows button {-moz-appearance: none !important; padding: 5px 10px !important; border-radius: 7px !important; background-color: #191925 !important; color: #00AABB !important}
+#editBookmarkPanelRows button {padding: 7px 12px !important;}
+
+/* Multiselect List / Button Hover */
+#editBookmarkPanelRows menulist:hover, #editBookmarkPanelRows button:hover, #editBookmarkPanelRows menulist:active, #editBookmarkPanelRows button:active {background-color: #14141D !important}
+
+/* Bookmark Done / Remove Button */
+#editBookmarkPanelDoneButton {background-color: #00AAFF !important; color: #191925 !important;}
+#editBookmarkPanelRemoveButton {background-color: #191925 !important; color: #999 !important;}
+
+/* Bookmark Done / Remove Button Hover */
+#editBookmarkPanelDoneButton:hover, #editBookmarkPanelDoneButton:active, #editBookmarkPanelDoneButton:focus {background-color: #2097d3 !important;}
+#editBookmarkPanelRemoveButton:hover, #editBookmarkPanelRemoveButton:active {background-color: #14141D !important;}
+
+
+
+/***** Notification Popup Padding *****/
+.popup-notification-body-container {padding: 20px 10px !important;}
+
+
+
+/***** Context Menu *****/
+/* Clear Default Style */
+menupopup, menupopup menuitem, menupopup menu, menupopup menuseparator {-moz-appearance: none !important;}
+
+/* Menu Item */
+menupopup menuitem, menupopup menu {padding: 6px 20px !important; color: #00AABB !important; background-color: #2A2D3E !important;}
+
+/* Context Menu Background */
+menupopup {background-color: #2A2D3E !important;}
+
+/* Menu Item Hover */
+menupopup menuitem:hover, menupopup menu:hover, menupopup menuitem:active, menupopup menu:active {background-color: #1F1F2B !important;}
+
+/* Hide Non-Needed Menu Items */
+.menu-iconic[label="uBlock Origin"], .menu-iconic[label="Firefox Multi-Account Containers"] {display: none !important;}
+.menu-text, .menubar-text{ display: none !important}
+
+/* Hide Menu Item Icons */
+#screenshots_mozilla_org-menuitem-_create-screenshot image, #ublock0_raymondhill_net-menuitem-_uBlock0-blockElement image {display: none !important;}
+
+/* Iconin Menu Buttons - Reload / Back / Bookmark */
+#context-navigation .menuitem-iconic {background-color: #1F1F2B !important; color: #00AABB !important; padding: 2px 10px !important;}
+
+/* Iconin Menu Buttons - Reload / Back / Bookmark Hover */
+#context-navigation .menuitem-iconic:hover {background-color: #00AABB !important; color: #ddd !important;}
+
+/* Hide Active Key Underlines */
+menupopup > menu:not(.menu-iconic)::before,
+menupopup > menuitem:not(.menuitem-iconic)::before {
+ content: attr(label);
+  display: -moz-box;
+  -moz-appearance: menuitemtext;
+  -moz-box-flex: 1;}
+
+menubar > menu::before {content: attr(label) !important; display: -moz-box !important; margin: 1px 6px 2px 6px !important;}
+
+
+
+/***** Toolbar Buttons *****/
+/* Icon & Hover Background Color */
+.toolbarbutton-icon {fill: #00AABB !important;}
+.toolbarbutton-icon[label="Library"] {fill: #00AABB !important;} /*Library*/
+.toolbarbutton-icon:hover {background-color: #1F1F2B !important;}
+#tabs-newtab-button .toolbarbutton-icon {fill: #999 !important;}
+
+/* Toolbar & Back Button */
+:root:-moz-lwtheme-brighttext, toolbar[brighttext] {
+  --toolbarbutton-hover-background: #1F1F2B !important;
+  --toolbarbutton-active-background: #1F1F2B !important;
+  --backbutton-background: #1F1F2B !important;
+  --backbutton-hover-background: #171720 !important;
+  --backbutton-active-background: #171720 !important;}
+
+/* Extra Toolbar Buttons */
+#downloads-button, #appMenu-library-button .toolbarbutton-icon {fill: #00AABB !important;}
+
+/* Hide Non-Needed Toolbar Buttons */
+#tracking-protection-icon-container, #pageActionButton {display: none !important;}
+#page-action-buttons > :not([hidden]):not(toolbartabstop) ~ #pageActionSeparator {margin-right: 0px !important;}
+
+/* Menu Button Divider */
+#PanelUI-button {border-inline-start: 0 !important; margin-inline-start: 0 !important;}
+
+/* Bookmark Button Hover Background */
+#star-button:hover, #star-button:active, #star-button:focus, #star-button-box:hover, #star-button-box:active, #star-button-box:focus {background-color: #13131a !important;}
+#star-button[starred] {fill: #0AB !important;}
+
+/* Make Navbar Compact by decreasing Back Button Padding */
+#back-button {padding-top: 0px !important; padding-bottom: 0px !important;}
+
+
+/***** Add-ons Icons *****/
+/* Container Add-on Icon 
+#_testpilot-containers-browser-action {--webextension-toolbar-image-light: url("file:///YOUR-LOCATION/Icons/Firefox/Container.svg") !important;} */
+
+/* Dark Reader Add-on Icon
+/#addon_darkreader_org-browser-action {--webextension-toolbar-image-light: url("file:///YOUR-LOCATION/Icons/Firefox/Dark-Mode.svg") !important;} */
+
+/* uBlock Add-on Inactive Icon
+#ublock0_raymondhill_net-browser-action {--webextension-toolbar-image-light: url("file:///YOUR-LOCATION/Icons/Firefox/uBlock-OFF.svg") !important;}
+
+/* uBlock Add-on Active Icon
+#ublock0_raymondhill_net-browser-action[badgeStyle="background-color: rgba(0, 0, 255, 1); color: rgba(255, 255, 255, 1)"] {--webextension-toolbar-image-light: url("file:///YOUR-LOCATION/Icons/Firefox/uBlock-ON.svg") !important;} */
+
+/* Forget Me Not Icon
+#forget-me-not_lusito_info-browser-action {--webextension-toolbar-image-light: url("file:///YOUR-LOCATION/Icons/Firefox/Cookie.svg") !important;} */
+
+/* Badge */
+#forget-me-not_lusito_info-browser-action[badge="I"] .toolbarbutton-badge {background-color: #191925 !important;}
+#forget-me-not_lusito_info-browser-action[badge="L"] .toolbarbutton-badge {background-color: #e74c3c !important;}
+#forget-me-not_lusito_info-browser-action[badge="S"] .toolbarbutton-badge {background-color: #555 !important;}
+#forget-me-not_lusito_info-browser-action[badge="N"] .toolbarbutton-badge {background-color: #27ae60 !important;}
+
+/* #ublock0_raymondhill_net-browser-action .toolbarbutton-badge {background-color: #e74c3c !important;} */
+
+/***** Sidebar Style *****/
+.sidebar-panel {background-color: #2A2D3E !important;}
+#sidebar-box {background-color: #191925 !important;}
+.sidebar-placesTreechildren {color: #00AABB !important;}
+#sidebar-switcher-target {color: #999 !important;}
+
+search-textbox {
+  -moz-appearance: none !important;
+  cursor: text !important;
+  margin: 2px 4px !important;
+  padding: 5px !important;
+  padding-inline-start: 10px !important;
+  background-color: #191925 !important;
+  color: #999 !important;
+  border-radius: 5px !important;}
+
+.titlebar-spacer[type="pre-tabs"] {display: none !important;}
