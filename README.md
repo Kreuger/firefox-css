@@ -2,4 +2,4 @@
 My custom CSS for Firefox.
 This is mainly just a backup for myself.
 
-![Screenshot](screenshot.png)
+![Screenshot](https://github.com/Kreuger/firefox-css/blob/master/Screenshot.png?raw=true )
