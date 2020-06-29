@@ -1,0 +1,6 @@
+#tabbrowser-tabs .tabbrowser-tab:nth-child(6n+1) .tab-background {background-color: #2574A7 !important;}
+#tabbrowser-tabs .tabbrowser-tab:nth-child(6n+2) .tab-background {background-color: #e67e22 !important;}
+#tabbrowser-tabs .tabbrowser-tab:nth-child(6n+3) .tab-background {background-color: #813E9D !important;}
+#tabbrowser-tabs .tabbrowser-tab:nth-child(6n+4) .tab-background {background-color: #16a085 !important;}
+#tabbrowser-tabs .tabbrowser-tab:nth-child(6n+5) .tab-background {background-color: #DC143C !important;}
+#tabbrowser-tabs .tabbrowser-tab:nth-child(6n+6) .tab-background {background-color: #777 !important;}
