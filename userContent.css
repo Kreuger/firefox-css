@@ -94,35 +94,42 @@ listheader {border: none !important; box-shadow: none !important;}
     #deny:hover, #deny:active {opacity: 0.9 !important;}
 }
 
-
 /* uBlock Origin */
-@-moz-document url-prefix("moz-extension://eee4d0c1-7cac-4896-aa9f-1a5c4902d2b9/popup.html") {
-    body{background-color: #2A2D3E !important; color: #00AABB !important; }
+@-moz-document url-prefix("moz-extension://24a1a14e-230c-480f-b458-5c9952ee1d19/popup-fenix.html") {
+    body, #sticky {background-color: #2A2D3E !important; color: #00AABB !important; }
     h2 {background-color: #2A2D3E !important; color: #999 !important; font-weight: bold !important;}
     span {color: #999 !important;}
-    #extraTools {background-color: #2A2D3E !important;}
-    #extraTools svg {fill: #999 !important;}
-    #firewallContainer > div > span:first-child {background-color: #2A2D3E !important; color: #00AABB !important;}
+    .toolRibbon span, .toolRibbon a, #moreOrLess span {background-color: #2A2D3E !important;}
+    .toolRibbon span:hover, .toolRibbon a:hover, #moreOrLess span:hover {background-color: #191925 !important;}
+    .toolRibbon span .fa-icon, .toolRibbon a .fa-icon, #moreOrLess span .fa-icon {fill: #999 !important;}
+    .toolRibbon span:hover .fa-icon, .toolRibbon a:hover .fa-icon, #moreOrLess span:hover span {background-color: #191925 !important;}
+   
     #appinfo {display: none !important;}
-    #switch .fa-icon {fill: #00AABB !important;}
-    body.off #switch .fa-icon {fill: #191925 !important;}
-    #rulesetTools .fa-icon {background-color: #2A2D3E !important; fill: #999 !important;}
-    #rulesetTools .fa-icon:hover {background-color: #2A2D3E !important; fill: #00AABB !important;}
+    #switch {fill: #00AABB !important; stroke: none !important; background-color: #2A2D3E !important;}
+    #switch:hover {fill: #191925 !important;}
+    body.off #switch {fill: #191925 !important;}
+    body.off #switch:hover {fill: #00AABB !important;}
+    .rulesetTools .fa-icon {background-color: #191925 !important; fill: #999 !important; border: none !important;}
+    .rulesetTools .fa-icon:hover {background-color: #2A2D3E !important; fill: #00AABB !important;}
     #basicTools svg {fill: #999 !important;}
     #basicTools span:hover {fill: #00AABB !important;}
-    #refresh {background-color: #2A2D3E !important; fill: #00AABB !important; border: none !important;}
-    #refresh svg:hover, #refresh svg:active {fill: #191925 !important;}
+    #refresh {background-color: #191925 !important; fill: #999 !important; border: none !important;}
+    #refresh:hover, #refresh:active {background-color: #2A2D3E !important; fill: #00AABB !important;}
     .nope {stroke: #e74c3c  !important;}
+    hr {border-color: #666 !important;}
    
-    #firewallContainer > div > span:nth-child(2), #firewallContainer > div > span:nth-child(3) {background-color: #191925 !important;}
-    #firewallContainer > div > span.allowRule.ownRule {background-color: #27ae60 !important;}
-    #firewallContainer > div > span.blockRule.ownRule {background-color: #e74c3c !important;}
-    #firewallContainer > div > span.noopRule.ownRule {background-color: #999 !important;}
-
-    #firewallContainer > div.blocked > span:first-of-type::before, #firewallContainer > div.isDomain.totalBlocked > span:first-of-type::before {background-color: #e74c3c !important}
-    #firewallContainer > div.allowed.blocked > span:first-of-type::before, #firewallContainer > div.isDomain.totalAllowed.totalBlocked > span:first-of-type::before {background-color: #f39c12 !important;}
-    #firewallContainer > div.allowed > span:first-of-type::before, #firewallContainer > div.isDomain.totalAllowed > span:first-of-type::before {background-color: #27ae60 !important;}
+    #firewall > div > span:nth-child(2), #firewall > div > span:nth-child(3) {background-color: #191925 !important;}
+    #firewall > div > span.allowRule.ownRule {background-color: #27ae60 !important;}
+    #firewall > div > span.blockRule.ownRule {background-color: #e74c3c !important;}
+    #firewall > div > span.noopRule.ownRule {background-color: #555 !important;}
+ 
+    #firewall > div > span:first-child {background-color: #2A2D3E !important; color: #00AABB !important;}
+ 
+    #firewall > div.blocked > span:first-of-type::before, #firewall > div.isDomain.totalBlocked > span:first-of-type::before {background-color: #e74c3c !important}
+    #firewall > div.allowed.blocked > span:first-of-type::before, #firewall > div.isDomain.totalAllowed.totalBlocked > span:first-of-type::before {background-color: #f39c12 !important;}
+    #firewall > div.allowed > span:first-of-type::before, #firewall > div.isDomain.totalAllowed > span:first-of-type::before {background-color: #27ae60 !important;}
 }
+
 
 /* Firefox Addons Page */
 @-moz-document domain("addons.mozilla.org") {
