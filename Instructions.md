@@ -9,3 +9,8 @@
 8. Restart Firefox
 9. ???
 10. Profit!
+
+## How to setup the custom start page.
+1. Install the nightTab extension [See here](https://addons.mozilla.org/en-US/firefox/addon/nighttab/)
+2. Once installed, click on the settings icon.
+3. Click on data, then click import data and select the nightTab backup.json file
