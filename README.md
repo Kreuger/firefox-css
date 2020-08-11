@@ -9,4 +9,4 @@ This is mainly just a backup for myself.
 
 ## Instructions: See ![here](/Instructions.md)
 
-## Sources: All content is taken from [here](https://www.reddit.com/r/FirefoxCSS/). I claim no ownership or copyright for any of this content.
+## Sources: All content is taken from [here](https://www.reddit.com/r/FirefoxCSS/) and [here](https://github.com/zombieFox/nightTab) . I claim no ownership or copyright for any of this content.
