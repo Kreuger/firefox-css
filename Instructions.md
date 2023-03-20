@@ -12,5 +12,7 @@
 
 ## How to setup the custom start page.
 1. Install the nightTab extension [See here](https://addons.mozilla.org/en-US/firefox/addon/nighttab/)
-2. Once installed, click on the settings icon.
-3. Click on data, then click import data and select the nightTab backup.json file
+2. Open the nighTab_backup.json file and switch to raw view. (Saving off github wont allow import). 
+3. Copy and paste the raw data into a file in the extension directory. Save as nightTab_backup.json.
+4. Open the nighTab settings page.
+5. Click on data, then click import data and select the nightTab backup.json file you previously saved.
